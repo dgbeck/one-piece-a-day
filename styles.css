@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f7f7f7;
+  background: #FBFBFB;
   line-height: 1.35;
 }
 
@@ -55,7 +55,7 @@ p {
 
 hr {
 	border: none;
-	border-top: 1px solid #e6e6e6;
+	border-top: 1px solid #efefef;
 	margin: 30px 0;
 }
 
@@ -72,41 +72,61 @@ div.month h2 {
 }
 
 .prize-container {
+  background: #FBFBFB;
+  padding: 15px;
+  border: 1px solid #efefef;
 	display: flex;
-	justify-content: left;
-	gap: 20px;
+	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 20px;
 }
 
-.prize-image {
+.prize-container .prize-image {
 	width: 150px;
 }
+
+.prize-container .data {
+	flex: 1;
+	text-align: left;
+	margin-left: 15px;
+}
+
+@media screen and (width <= 600px) {
+	.prize-container .data {
+		width: 100%;
+		flex: 0 0 auto;
+		text-align: center;
+		margin-top: 15px;
+		margin-left: 0;
+	}
+}
+
+.prize-container .data .title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
 
 /* Leaderboard Table */
 .leaderboard {
   width: 100%;
   border-collapse: collapse;
   background: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  background: #f7f7f7;
-  border: 1px solid #e6e6e6;
+  background: #FBFBFB;
+  border: 1px solid #efefef;
 }
 
 .leaderboard th,
 .leaderboard td {
   padding: 12px 16px;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #efefef;
   text-align: left;
 }
 
 .leaderboard th {
   background: #fafafa;
   font-weight: bold;
-}
-
-.leaderboard tr:hover {
-  background: #f0f0f0;
 }
 
 .faq-section {
